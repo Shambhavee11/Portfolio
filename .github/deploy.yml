@@ -1,4 +1,4 @@
-name: Portfolio
+name: deploy
 
 on:
   push:
@@ -30,7 +30,7 @@ jobs:
           path: ./dist
 
   deploy:
-    name: Portfolio
+    name: deploy
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
